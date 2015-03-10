@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WSolver Example</title>
+  <script src="../lib/jquery.min.js"></script>
+  
+  <!-- PhotonUI Dependency -->
+  <link rel="stylesheet" type="text/css" href="lib/photonui.css"/>
+  <link rel="stylesheet" type="text/css" href="lib/photonui-theme.css"/>
+  <script src="lib/photonui.js"></script>
+  <!-- End PhotonUI Dependency -->
+  
+  <!-- WSolver dependency -->
+  <script src="../wsolver.js"></script>
+  <script src="../wsrenderer.js"></script>
+  <!-- End WSolver dependency -->
+  
+  <!-- UI Definition -->
+  <script src="js/interface.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <!-- End UI Definition -->
+</head>
+<body>
+  <section id="interface" class="fill">
+  </section>
+  <script>
+    function _randomRange(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    $(document).ready(function() {
+      interface.createInterface();
+    });
+  </script>
+</body>
+<html>

@@ -1,0 +1,1413 @@
+
+/*****************************************************************************
+ * input/checkbox/checkbox-theme.css                                         *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-checkbox {
+}
+
+.photonui-checkbox input {
+    display: none;
+}
+
+.photonui-checkbox span {
+    margin-top: -1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+    vertical-align: middle;
+
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+    border: #a5a5a5 solid 1px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .1);
+    outline: none;
+    transition: all .1s;
+}
+
+.photonui-checkbox span:focus {
+    border-color: #777;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .1), 0 0 3px rgba(0, 0, 0, .3);
+}
+
+.photonui-checkbox input:checked + span:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    border-radius: 1px;
+    background: #25a9b5;
+
+    background: -moz-linear-gradient(top, #25a9b5 0%, #008091 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25a9b5), color-stop(100%,#008091)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #25a9b5 0%,#008091 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #25a9b5 0%,#008091 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #25a9b5 0%,#008091 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #25a9b5 0%,#008091 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25a9b5', endColorstr='#008091',GradientType=0 ); /* IE6-9 */
+
+}
+
+/*****************************************************************************
+ * visual/label-theme.css                                                    *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+.photonui-label {
+    color: #333;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .9);
+    padding: 2px 0;
+}
+
+/*****************************************************************************
+ * input/field/field-theme.css                                               *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+.photonui-field {
+    background: #fff;
+    color: #333;
+    border: #a5a5a5 solid 1px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .1);
+    outline: none;
+    padding: 5px;
+    transition: all .1s;
+    font-size: 12pt;
+
+    /* Hack for webkit... */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+    width: calc(100% - 12px) !important;
+}
+
+.photonui-field:focus {
+    border-color: #777;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .1), 0 0 3px rgba(0, 0, 0, .3);
+}
+
+.photonui-field::-webkit-input-placeholder {
+   color: #333;
+   opacity: .4;
+}
+
+.photonui-field:-moz-placeholder {
+   color: #333;
+   opacity: .4;
+}
+
+.photonui-field::-moz-placeholder {
+   color: #333;
+   opacity: .4;
+}
+
+.photonui-field:-ms-input-placeholder {
+   color: #aaa;
+   opacity: 1;
+}
+
+/*****************************************************************************
+ * visual/separator-theme.css                                                *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+.photonui-separator hr {
+    border: none;
+}
+
+.photonui-separator.photonui-separator-horizontal hr {
+    border-top: #bbb solid 1px;
+    border-bottom: #fff solid 1px;
+}
+
+.photonui-separator.photonui-separator-vertical hr {
+    border-left: #bbb solid 1px;
+    border-right: #fff solid 1px;
+}
+
+/*****************************************************************************
+ * visual/progressbar-theme.css                                              *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-progressbar {
+    padding: 1px;
+    background: #fff;
+    border: #888 solid 1px;
+    border-radius: 3px;
+}
+
+.photonui-progressbar-bar {
+    border-radius: 2px;
+    background: #25a9b5;
+    transition: all linear .2s;
+}
+
+.photonui-progressbar-text {
+    color: #0D2A2D;
+}
+
+.photonui-progressbar-text span {
+    pointer-events: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/** Horizontal **/
+
+
+.photonui-progressbar.photonui-progressbar-horizontal {
+    background: -moz-linear-gradient(top, #ededed 0%, #f6f6f6 55%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(55%,#f6f6f6), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ededed 0%,#f6f6f6 55%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ededed 0%,#f6f6f6 55%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ededed 0%,#f6f6f6 55%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ededed 0%,#f6f6f6 55%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.photonui-progressbar.photonui-progressbar-horizontal .photonui-progressbar-bar {
+    background: -moz-linear-gradient(top, #25a9b5 0%, #008091 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25a9b5), color-stop(100%,#008091)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #25a9b5 0%,#008091 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #25a9b5 0%,#008091 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #25a9b5 0%,#008091 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #25a9b5 0%,#008091 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25a9b5', endColorstr='#008091',GradientType=0 ); /* IE6-9 */
+    box-shadow: inset 1px 1px 0 #028393, inset -1px 1px 0 #028393;
+}
+
+.photonui-progressbar.photonui-progressbar-horizontal .photonui-progressbar-text {
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .3);
+}
+
+
+/** Vertical **/
+
+
+.photonui-progressbar.photonui-progressbar-vertical {
+    background: -moz-linear-gradient(left, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+    background: linear-gradient(to right, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
+}
+
+.photonui-progressbar.photonui-progressbar-vertical .photonui-progressbar-bar {
+    background: -moz-linear-gradient(left, #008091 0%, #25a9b5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#008091), color-stop(100%,#25a9b5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #008091 0%,#25a9b5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #008091 0%,#25a9b5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #008091 0%,#25a9b5 100%); /* IE10+ */
+    background: linear-gradient(to right, #008091 0%,#25a9b5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008091', endColorstr='#25a9b5',GradientType=1 ); /* IE6-9 */
+    box-shadow: inset -1px -1px 0 #028393, inset -1px 1px 0 #028393;
+}
+
+.photonui-progressbar.photonui-progressbar-vertical .photonui-progressbar-text {
+    text-shadow: -1px 1px 0 rgba(255, 255, 255, .3);
+}
+
+/*****************************************************************************
+ * input/color/colorpalette-theme.css                                        *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-colorpalette {
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+.photonui-colorpalette tr td {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/*****************************************************************************
+ * input/checkbox/switch-theme.css                                           *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-switch span {
+    height: 20px;
+    width: 40px;
+    padding: 1px;
+
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+    border: #a5a5a5 solid 1px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .2);
+    outline: none;
+    transition: box-shadow .1s, border-color .1s, background .2s;
+}
+
+.photonui-switch span:focus {
+    border-color: #777;
+    box-shadow: inset 0 0 7px rgba(0, 0, 0, .2), 0 0 3px rgba(0, 0, 0, .3);
+}
+
+.photonui-switch span:after {
+    transition: all .2s;
+    border-radius: 2px;
+    border: #777 solid 1px;
+    background: #f1f1f1;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+
+.photonui-switch input:checked + span {
+    background: #3BC5D2;
+    box-shadow: inset 0 0 5px rgba(1, 88, 95, .5);
+    border-color: #01585F;
+}
+
+.photonui-switch input:checked + span:focus {
+    box-shadow: inset 0 0 5px rgba(1, 88, 95, .5), 0 0 3px rgba(0, 0, 0, .5);
+}
+
+.photonui-switch input:checked + span:after {
+    border-color: #01585F;
+}
+
+/*****************************************************************************
+ * container/window/window-theme.css                                         *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-window {
+    border: #aaa solid 1px;
+    background: #f1f1f1;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.photonui-window-title {
+    margin: -1px -1px 0 -1px;
+    border-radius: 2px 2px 0 0;
+    background: #484848;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+.photonui-active .photonui-window-title {
+    background: #383838;
+}
+
+.photonui-window-title-close-button {
+    display: block;
+    margin: 6px 6px 0 0;
+    padding: 0;
+    height: 22px;
+    width: 22px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.photonui-active .photonui-window-title-close-button {
+    background: #555;
+}
+
+.photonui-active .photonui-window-title-close-button:hover {
+    background: #777;
+}
+
+.photonui-window-title-close-button:before,
+.photonui-window-title-close-button:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 16px;
+    background: #666;
+    pointer-events: none;
+}
+
+.photonui-window-title-close-button:before {
+    float: left;
+    -webkit-transform: translate(9px, 0) rotate(45deg);
+    -moz-transform: translate(9px, 0) rotate(45deg);
+    -ms-transform: translate(9px, 0) rotate(45deg);
+    transform: translate(9px, 0) rotate(45deg);
+}
+
+.photonui-window-title-close-button:after {
+    float: right;
+    -webkit-transform: translate(-8px, 0) rotate(-45deg);
+    -moz-transform: translate(-8px, 0) rotate(-45deg);
+    -ms-transform: translate(-8px, 0) rotate(-45deg);
+    transform: translate(-8px, 0) rotate(-45deg);
+}
+
+.photonui-active .photonui-window-title-close-button:before,
+.photonui-active .photonui-window-title-close-button:after {
+    background: #aaa;
+}
+
+.photonui-window-title-close-button:hover:before,
+.photonui-window-title-close-button:hover:after {
+    background: #ccc;
+}
+
+.photonui-active .photonui-window-title-close-button:hover:before,
+.photonui-active .photonui-window-title-close-button:hover:after {
+    background: #eee;
+}
+
+.photonui-window-title-text {
+    padding: 8px 10px;
+    font-size: 105%;
+    font-weight: bold;
+    color: #aaa;
+    text-shadow: -1px -1px 0 #333;
+}
+
+.photonui-window-have-button .photonui-window-title-text {
+    padding: 8px 0 8px 10px;
+    width: calc(100% - 42px);
+}
+
+.photonui-active .photonui-window-title-text {
+    color: #fff;
+    text-shadow: -1px -1px 0 #111;
+}
+
+.photonui-window-content {
+}
+
+.photonui-window-modalbox {
+    background: rgba(255, 255, 255, .7);
+}
+
+/*****************************************************************************
+ * input/slider/slider-theme.css                                             *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-slider {
+}
+
+.photonui-slider-slider {
+    padding: 0 1px;
+    outline: none;
+    height: 30px;
+}
+
+.photonui-slider-slider:before {
+    margin: 13px 7px 0 7px;
+    content: "";
+    display: block;
+    height: 4px;
+    background: #ccc;
+    border-radius: 2px;
+}
+
+.photonui-slider-grip {
+    margin-top: -10px;
+    width: 16px;
+    height: 16px;
+    border: #a5a5a5 solid 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+
+    background: #ffffff; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #d3d3d3 47%, #ffffff 65%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(47%,#d3d3d3), color-stop(65%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#d3d3d3 47%,#ffffff 65%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#d3d3d3 47%,#ffffff 65%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#d3d3d3 47%,#ffffff 65%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #ffffff 0%,#d3d3d3 47%,#ffffff 65%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.photonui-slider-slider:focus .photonui-slider-grip {
+    border-color: #777;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+
+    background: #ffffff; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #bcbcbc 47%, #ffffff 65%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(47%,#bcbcbc), color-stop(65%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#bcbcbc 47%,#ffffff 65%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#bcbcbc 47%,#ffffff 65%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#bcbcbc 47%,#ffffff 65%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #ffffff 0%,#bcbcbc 47%,#ffffff 65%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/*****************************************************************************
+ * input/button/button-theme.css                                             *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-button {
+    padding: 0 8px;
+    min-width: 32px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none !important;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    outline: none;
+    vertical-align: middle;
+    line-height: 2em;
+    transition: border-color .1s, box-shadow .1s;
+
+    /** color **/
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    border: #a5a5a5 solid 1px;
+    color: #444;
+    text-shadow: 1px 1px 0 #eee;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .5), inset -1px -1px 0 rgba(255, 255, 255, .2), 1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.photonui-button:active, input:checked + .photonui-button {
+    background: #cccccc; /* Old browsers */
+    background: -moz-linear-gradient(top, #cccccc 0%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cccccc 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #cccccc 0%,#eeeeee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #cccccc 0%,#eeeeee 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #cccccc 0%,#eeeeee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+
+input:checked + .photonui-button {
+    box-shadow: inset 2px 1px 7px rgba(0, 0, 0, .1);
+}
+
+.photonui-button:focus {
+    border-color: #777;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .5), inset -1px -1px 0 rgba(255, 255, 255, .2), 0 0 3px rgba(0, 0, 0, .4);
+}
+
+.photonui-button:focus:active {
+    box-shadow: inset 2px 1px 7px rgba(0, 0, 0, .1);
+}
+
+
+/**
+ * Flat button
+ */
+
+.photonui-button.photonui-button-appearance-flat,
+.photonui-button-appearance-flat .photonui-button {
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+    transition: border-color 0, box-shadow .1s;
+}
+
+.photonui-button.photonui-button-appearance-flat:focus,
+.photonui-button-appearance-flat .photonui-button:focus {
+    outline: #ccc dashed 1px;
+}
+
+.photonui-button.photonui-button-appearance-flat:hover,
+.photonui-button-appearance-flat .photonui-button:hover {
+    outline: none;
+    border-color: #a5a5a5;
+
+    padding: 0 8px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none !important;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    outline: none;
+    vertical-align: middle;
+    line-height: 2em;
+    transition: border-color .1s, box-shadow .1s;
+
+    /** color **/
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.photonui-button.photonui-button-appearance-flat:active,
+.photonui-button-appearance-flat .photonui-button:active,
+input:checked + .photonui-button,
+.photonui-button-appearance-flat input:checked + .photonui-button {
+    outline: none;
+    border-color: #a5a5a5;
+
+    background: #cccccc; /* Old browsers */
+    background: -moz-linear-gradient(top, #cccccc 0%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cccccc 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #cccccc 0%,#eeeeee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #cccccc 0%,#eeeeee 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #cccccc 0%,#eeeeee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+
+/*****************************************************************************
+ * container/window/popupwindow-theme.css                                    *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-popupwindow {
+    border: #aaa solid 1px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+
+/*****************************************************************************
+ * container/window/dialog-theme.css                                         *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-dialog-buttons {
+    padding: 5px;
+    text-align: right;
+
+    border-top: #bbb solid 1px;
+    box-shadow: inset 0 7px 7px -7px rgba(0, 0, 0, .2);
+    background: #e1e1e1;
+}
+
+.photonui-dialog-buttons > * {
+    margin-left: 5px;
+}
+
+.photonui-dialog-buttons > *:first-child {
+    margin-left: 0;
+}
+
+/*****************************************************************************
+ * input/color/colorpicker-theme.css                                         *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-colorpicker .photonui-colorpicker-previewouter {
+    border: #a5a5a5 solid 1px;
+    border-radius: 2px;
+
+    background-color: #f1f1f1;
+    background-image: linear-gradient(45deg, #bbb 25%, transparent 25%, transparent 75%, #bbb 75%, #bbb), 
+    linear-gradient(45deg, #bbb 25%, transparent 25%, transparent 75%, #bbb 75%, #bbb);
+    background-size: 30px 30px;
+    background-position:0 0, 15px 15px
+}
+
+.photonui-colorpicker .photonui-colorpicker-preview {
+    box-shadow: inset  0 0 0 1px rgba(255, 255, 255, .8);
+    border-radius: 2px;
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    font-size: 14px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .1), 1px 1px 1px rgba(0, 0, 0, .7);
+    outline: none;
+}
+
+.photonui-colorpicker .photonui-colorpicker-preview:focus {
+    color: #fff;
+}
+
+/*****************************************************************************
+ * container/menu/menu-theme.css                                             *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+/****************************************************************************
+ * Default theme                                                            *
+ ****************************************************************************/
+
+
+.photonui-menu.photonui-menu-style-default > .photonui-menuitem {
+    cursor: pointer;
+    background: #f1f1f1;
+    box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 rgba(0, 0, 0, .2);
+    color: #333;
+    text-shadow: 1px 1px 0 #fff;
+    padding-bottom: 1px;
+}
+
+.photonui-menu.photonui-menu-style-default > .photonui-menuitem:hover {
+    cursor: pointer;
+    background: #e1e1e1;
+    box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 rgba(0, 0, 0, .2);
+}
+
+.photonui-menu.photonui-menu-style-default .photonui-separator  hr {
+    border: none;
+    height: 10px;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(0, 0, 0, .05) 5px, rgba(0, 0, 0, .05) 10px);
+}
+
+/** Active item **/
+
+.photonui-menu.photonui-menu-style-default > .photonui-menuitem.photonui-menuitem-active {
+    background: #08666E;
+    box-shadow: 0 -1px 0 #01585F, inset -1px 0 0 #01585F, inset 1px 0 0 #01585F, inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 #0C474C, inset 0 -2px 0 rgba(255, 255, 255, .1), inset 2px 0 0 rgba(255, 255, 255, .2), inset -2px 0 0 rgba(255, 255, 255, .1);
+    color: #fff;
+    text-shadow: -1px -1px 0 #0C474C;
+}
+
+/** Hide icons **/
+
+.photonui-menu.photonui-menu-style-default.photonui-menu-noicon > .photonui-menuitem .photonui-menuitem-icon {
+    display: none;
+}
+
+.photonui-menu.photonui-menu-style-default.photonui-menu-noicon > .photonui-menuitem .photonui-menuitem-text {
+    padding-left: 5px;
+}
+
+/** Submenu item **/
+
+.photonui-menu.photonui-menu-style-default .photonui-submenuitem .photonui-menuitem-widget:after {
+    content: "";
+    display: block;
+    float: right;
+    border-top: transparent solid 4px;
+    border-right: #333 solid 4px;
+    border-bottom: #333 solid 4px;
+    border-left: transparent solid 4px;
+    margin-right: 5px;
+    margin-top: calc(25% - 3px);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all .1s;
+}
+
+/** Submenu item + active **/
+
+.photonui-menu.photonui-menu-style-default > .photonui-menuitem.photonui-submenuitem.photonui-menuitem-active {
+    background: #08666E;
+    box-shadow: 0 -1px 0 #01585F, inset -1px 0 0 #01585F, inset 1px 0 0 #01585F, inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 #0C474C, inset 0 -2px 0 rgba(255, 255, 255, .1), inset 2px 0 0 rgba(255, 255, 255, .2), inset -2px 0 0 rgba(255, 255, 255, .1);
+    color: #fff;
+    text-shadow: -1px -1px 0 #0C474C;
+}
+
+.photonui-menu.photonui-menu-style-default > .photonui-menuitem.photonui-submenuitem.photonui-menuitem-active .photonui-menuitem-widget:after {
+    margin-top: calc(25% - 6px);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+}
+
+/** Submenu **/
+
+.photonui-menu.photonui-menu-style-default > .photonui-menu.photonui-menu-style-default {
+    margin-left: 2px;
+    margin-top: -2px;
+    padding-top: 2px;
+    border-left: #08666E solid 4px;
+    box-shadow: -1px 0 0 #39858B, -2px 0 0 #01585F;
+}
+
+/*****************************************************************************
+ * composite/popupmenu-theme.css                                             *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+/****************************************************************************
+ * Menu PopupMenu theme                                                     *
+ ****************************************************************************/
+
+.photonui-popupmenu {
+    border: none;
+    padding-top: 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2), inset 1px 1px 0 #aaa, inset -1px -1px 0 #aaa;
+    overflow: hidden;
+    border-radius: 1px;
+}
+
+.photonui-menu.photonui-menu-style-popupmenu > .photonui-menuitem {
+    cursor: pointer;
+    color: #3c3c3c;
+}
+
+.photonui-menu.photonui-menu-style-popupmenu .photonui-separator  hr {
+    margin: 3px 0;
+    border: none;
+    border-bottom: #bbb solid 1px;
+}
+
+/** Active / hover item **/
+
+.photonui-menu.photonui-menu-style-popupmenu > .photonui-menuitem:hover,
+.photonui-menu.photonui-menu-style-popupmenu > .photonui-menuitem.photonui-menuitem-active {
+    background: #08666E;
+    box-shadow: 0 -1px 0 #01585F, inset -1px 0 0 #01585F, inset 1px 0 0 #01585F, inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 #0C474C, inset 0 -2px 0 rgba(255, 255, 255, .1), inset 2px 0 0 rgba(255, 255, 255, .2), inset -2px 0 0 rgba(255, 255, 255, .1);
+    color: #fff;
+    text-shadow: -1px -1px 0 #0C474C;
+}
+
+/** Hide icons **/
+
+.photonui-menu-noicon .photonui-menu.photonui-menu-style-popupmenu > .photonui-menuitem .photonui-menuitem-icon {
+    display: none;
+}
+
+.photonui-menu-noicon .photonui-menu.photonui-menu-style-popupmenu > .photonui-menuitem .photonui-menuitem-text {
+    padding-left: 5px;
+}
+
+/** Submenu item **/
+
+.photonui-menu.photonui-menu-style-popupmenu .photonui-menuitem-submenu:after {
+    content: "";
+    display: block;
+    float: right;
+    border-top: transparent solid 4px;
+    border-right: #333 solid 4px;
+    border-bottom: #333 solid 4px;
+    border-left: transparent solid 4px;
+    margin-right: 5px;
+    margin-top: calc(25% - 3px);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all .1s;
+}
+
+/*****************************************************************************
+ * input/select/select-theme.css                                             *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-select {
+    padding: 0 25px 0 8px;
+    min-width: 32px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none !important;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    outline: none;
+    vertical-align: middle;
+    line-height: 2em;
+    transition: border-color .1s, box-shadow .1s;
+
+    /** color **/
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    border: #a5a5a5 solid 1px;
+    color: #444;
+    text-shadow: 1px 1px 0 #eee;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .5), inset -1px -1px 0 rgba(255, 255, 255, .2), 1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.photonui-select:active {
+    background: #cccccc; /* Old browsers */
+    background: -moz-linear-gradient(top, #cccccc 0%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cccccc 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #cccccc 0%,#eeeeee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #cccccc 0%,#eeeeee 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #cccccc 0%,#eeeeee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+
+.photonui-select:focus {
+    border-color: #777;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .5), inset -1px -1px 0 rgba(255, 255, 255, .2), 0 0 3px rgba(0, 0, 0, .4);
+}
+
+.photonui-select:before {
+    content: "";
+    display: inline-block;
+    border: #555 solid 4px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    float: right;
+    margin: 8px -15px 0 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.photonui-select > * {
+    width: 10px; /** Hack for webkit **/
+}
+
+.photonui-select-placeholder {
+    opacity: .7;
+    font-style: italic;
+}
+
+/*****************************************************************************
+ * input/button/colorbutton-theme.css                                        *
+ ****************************************************************************/
+
+/*
+ * Copyright (c) 2014, Wanadev <http://www.wanadev.fr/>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *   * Redistributions of source code must retain the above copyright notice, this
+ *     list of conditions and the following disclaimer.
+ *   * Redistributions in binary form must reproduce the above copyright notice,
+ *     this list of conditions and the following disclaimer in the documentation
+ *     and/or other materials provided with the distribution.
+ *   * Neither the name of Wanadev nor the names of its contributors may be used
+ *     to endorse or promote products derived from this software without specific
+ *     prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Authored by: Fabien LOISON <http://flozz.fr/>
+ */
+
+
+.photonui-colorbutton {
+    padding: 0;
+}
+
+.photonui-colorbutton span {
+    margin: 3px;
+    padding: 2px 5px;
+    line-height: 1.5em;
+    border-radius: 1px;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .3), inset -1px -1px 0 rgba(0, 0, 0, .3);
+    text-shadow: none;
+}
+
+.photonui-colorbutton-custombutton {
+    color: #2A7DB5;
+    margin: 0 0 -1px -1px !important;
+    width: calc(100% + 2px) !important;
+    height: 30px !important;
+}
