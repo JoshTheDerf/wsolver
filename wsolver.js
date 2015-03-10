@@ -46,7 +46,7 @@
       url: file,
       cache: false,
       type: 'text',
-      method: 'POST',
+      method: 'GET',
     }).done(function(data) {
       var ws = solver.parseTextSearch(data);
       cb ? cb(ws) : null;
