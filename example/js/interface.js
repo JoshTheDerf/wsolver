@@ -434,6 +434,27 @@ interface.createOptionsPanel = function() {
       interface.renderers.drawFunc();
     });
     
+    var optExtraPadding = new photonui.NumericField({
+      value: interface.renderers.main.options.extraPadding,
+      min: 0,
+      max: 10,
+      step: 0.1,
+    });
+
+    mainOptions.addChild(new photonui.Label({
+      text: "Extra Padding:",
+      forInput: optExtraPadding,
+    }), {
+      gridX: 0,
+      gridY: 3,
+    });
+    
+    mainOptions.addChild(optExtraPadding, {gridX: 1, gridY: 3});
+    optExtraPadding.registerCallback('value-changed', 'value-changed', function() {
+      interface.renderers.main.options.extraPadding = optExtraPadding.value;
+      interface.renderers.drawFunc();
+    });
+
     var optFont = new photonui.TextField({
       value: interface.renderers.grid.options.font,
     });
@@ -443,10 +464,10 @@ interface.createOptionsPanel = function() {
       forInput: optFont,
     }), {
       gridX: 0,
-      gridY: 3,
+      gridY: 4,
     });
     
-    mainOptions.addChild(optFont, {gridX: 1, gridY: 3});
+    mainOptions.addChild(optFont, {gridX: 1, gridY: 4});
     optFont.registerCallback('value-changed', 'value-changed', function() {
       interface.renderers.grid.options.font = optFont.value;
       interface.renderers.drawFunc();
@@ -461,10 +482,10 @@ interface.createOptionsPanel = function() {
       forInput: optFontColor,
     }), {
       gridX: 0,
-      gridY: 4,
+      gridY: 5,
     });
     
-    mainOptions.addChild(optFontColor, {gridX: 1, gridY: 4});
+    mainOptions.addChild(optFontColor, {gridX: 1, gridY: 5});
     optFontColor.registerCallback('value-changed', 'value-changed', function() {
       interface.renderers.grid.options.fontColor = optFontColor.value;
       interface.renderers.drawFunc();
@@ -483,10 +504,10 @@ interface.createOptionsPanel = function() {
       forInput: optMatchRenderer,
     }), {
       gridX: 0,
-      gridY: 5,
+      gridY: 6,
     });
     
-    mainOptions.addChild(optMatchRenderer, {gridX: 1, gridY: 5});
+    mainOptions.addChild(optMatchRenderer, {gridX: 1, gridY: 6});
     optMatchRenderer.registerCallback('value-changed', 'value-changed', function() {
       if(optMatchRenderer.value == "capsule") {
         interface.renderers.match = interface.renderers.availableMatchRenderers[0];
